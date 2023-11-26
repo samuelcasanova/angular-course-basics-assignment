@@ -1,0 +1,7 @@
+<div>
+  <p [ngStyle]="{'visibility': visibilityCssProp}">toggle-timestamp works!</p>
+  <button (click)="onClick()">Display Details</button>
+  <ul>
+    <li *ngFor="let click of clicks; let i = index" [ngStyle]="{'background-color': i >= 5 ? 'blue' : 'inherit', 'color': i >= 5 ? 'white' : 'inherit'}">{{ click }}</li>
+  </ul>
+</div>
