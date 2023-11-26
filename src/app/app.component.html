@@ -1,9 +1,17 @@
 <main class="main">
   <div class="content">
-    <div *ngFor="let alert of alerts">
-      <app-warning-alert></app-warning-alert>
+    <div>
+      <h2>Username</h2>
+      <app-username/>
     </div>
-    <app-success-alert></app-success-alert>
+    <div>
+      <h2>Alerts</h2>
+      <div *ngFor="let alert of alerts">
+        <app-warning-alert></app-warning-alert>
+      </div>
+      <app-success-alert></app-success-alert>
+    </div>
+    <hr/>
   </div>
 </main>
 

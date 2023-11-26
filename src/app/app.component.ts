@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { UsernameComponent } from './username/username.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
     CommonModule, 
     RouterOutlet, 
     WarningAlertComponent, 
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    UsernameComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -21,11 +23,6 @@ export class AppComponent {
   alerts = [
     'this is the message 1',
     'this is the message 2',
-    'this is the message 3',
-    'this is the message 4',
-    'this is the message 5',
-    'this is the message 6',
-    'this is the message 7',
-    'this is the message 8'
+    'this is the message 3'
   ]
 }
